@@ -3,9 +3,9 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = '0,1,2,3,4,5,6,7'
 import pandas as pd
 from sklearn.model_selection import train_test_split, StratifiedKFold
-from src.genomic_embeddings.models import NNClf, NNClfFolds
-from src.genomic_embeddings.data import Embedding
-from src.genomic_embeddings.plot import ModelPlots, FoldModelPlots
+from model.models import NNClf, NNClfFolds
+from model.data import Embedding
+from model.plot import ModelPlots, FoldModelPlots
 import argparse
 import logging
 import tensorflow as tf
